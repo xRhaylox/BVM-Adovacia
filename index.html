@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BVM Advocacia - Escritório especializado em Direito Bancário e Criminal em Macapá/AP." />
+  <meta name="keywords" content="Advocacia, Direito Bancário, Direito Criminal, Macapá, Amapá" />
+  <meta name="author" content="BVM Advocacia" />
+  <meta property="og:title" content="BVM Advocacia - Direito Bancário e Criminal" />
+  <meta property="og:description" content="Atendimento nacional para direitos bancários e defesa criminal." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://seusite.com" />
+  <meta property="og:image" content="/logo.png" />
+  <title>BVM Advocacia | Direito Bancário e Criminal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+</head>
+<body>
+  <header class="topbar">
+    <nav class="navbar" aria-label="Menu Principal">
+      <div class="brand">BVM Advocacia</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#bancario">Direito Bancário</a></li>
+        <li><a href="#criminal">Direito Criminal</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <a class="whatsapp-button" href="https://wa.me/5596984079393" target="_blank" rel="noopener noreferrer">WhatsApp Agora</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero" aria-label="Seção inicial">
+      <h1>BVM Advocacia</h1>
+      <p>Especialistas em Direito Bancário e Criminal em Macapá/AP. Atendemos todo o Brasil.</p>
+      <a class="primary-cta" href="#contato">Fale Conosco</a>
+    </section>
+
+    <section id="bancario" class="section">
+      <h2>Direito Bancário</h2>
+      <article>
+        <h3>Revisão de contratos bancários</h3>
+        <p>Renegociação de dívidas abusivas com análise detalhada da cobrança de juros e tarifas indevidas, buscando condições mais justas e sustentáveis para o cliente.</p>
+      </article>
+      <article>
+        <h3>Rescisão de contratos</h3>
+        <p>Cancelamento de financiamentos com cláusulas leoninas, revisão de pactos e recuperação de valores pagos em excesso de contrato.</p>
+      </article>
+      <article>
+        <h3>Financiamento de veículos</h3>
+        <p>Redução de juros e multas indevidas em contratos de veículos, contestação de cobranças e apoio jurídico na negociação com instituições financeiras.</p>
+      </article>
+      <article>
+        <h3>Limitação de margem consignável</h3>
+        <p>Defesa contra descontos excessivos no salário e qualidade de vida do trabalhador, através de ações judiciais e administrativas para correção de margem consignável.</p>
+      </article>
+    </section>
+
+    <section id="criminal" class="section">
+      <h2>Direito Criminal</h2>
+      <article>
+        <h3>Defesa em processos criminais</h3>
+        <p>Atuação em todas as fases processuais, desde sindicância até Tribunal do Júri, com foco em ampla defesa e garantia de direitos constitucionais.</p>
+      </article>
+      <article>
+        <h3>Lavagem de dinheiro</h3>
+        <p>Assessoria em casos complexos de investigação financeira, com atuação estratégica em defesa e em eventuais acordos de colaboração.</p>
+      </article>
+      <article>
+        <h3>Crimes contra o patrimônio e resistência</h3>
+        <p>Atuação especializada em casos de furto, roubo, estelionato e outros delitos patrimoniais, com foco em redução de pena e soluções alternativas.</p>
+      </article>
+    </section>
+
+    <section id="contato" class="section">
+      <h2>Contato</h2>
+      <p>Endereço: São Lázaro, Macapá/AP</p>
+      <div class="contact-wrap">
+        <div class="map-container">
+          <iframe title="Localização BVM Advocacia" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3992.9133956114844!2d-51.063250684936746!3d-0.05094773660192485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zwrU5wrAxwrExwqA0wqI!5e0!3m2!1spt-BR!2sbr!4v0000000000000" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <form id="contatoForm" class="contact-form" novalidate>
+          <label for="nome">Nome*</label>
+          <input type="text" id="nome" name="nome" required minlength="2" maxlength="100" />
+
+          <label for="telefone">Telefone (11 dígitos)*</label>
+          <input type="tel" id="telefone" name="telefone" required placeholder="99871234567" pattern="\d{11}" />
+
+          <label for="demanda">Demanda*</label>
+          <textarea id="demanda" name="demanda" required minlength="10" maxlength="500"></textarea>
+
+          <input type="hidden" id="csrfToken" name="_csrf" value="" />
+
+          <button type="submit">Enviar Mensagem</button>
+
+          <p id="formMessage" aria-live="polite"></p>
+        </form>
+      </div>
+      <p>
+        Telefone: <a href="tel:+5596984079393">(96) 98407-9393</a><br />
+        Email: <a href="mailto:contato@bvmadvocacia.com">contato@bvmadvocacia.com</a>
+      </p>
+      <p>Instagram: <a href="https://instagram.com/bvm_advocacia" target="_blank" rel="noopener noreferrer">@bvm_advocacia</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> BVM Advocacia. São Lázaro, Macapá/AP.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
